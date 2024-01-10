@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .img1{
+        position: relative;
+        bottom: 480px;
+     }
+     .img2{
+        position: relative;
+        bottom: 560px;
+     }
+     .img3{
+        position: relative;
+        bottom: 620px;
+     }
+     
+     #i1:checked~.img1{
+        margin-left: 1200px;
+        transition-duration: 4s;
+        transition-timing-function:ease-out ;
+     }
+     #i1:checked~.img2{
+        margin-left: 1250px;
+        transition-duration: 5s;
+        transition-delay: 0.5s;
+     }
+     #i1:checked~.img3{
+        margin-left: 1280px;
+        transition-duration: 6s;
+        transition-delay: 0.5s;
+     }
+     .aa{
+     border: 1px solid;
+     width: 100px;
+     height: 100px;
+     background-color: aqua;
+     }
+     #i1:checked~.aa{
+      background-color: rgb(0, 128, 240);
+     }
+     /* .kk{
+      display: none;
+     }
+     #i1:active+.kk{
+       display: inline-block;
+     } */
+    </style>
+</head>
+<body>
+    <input type="radio" id="i1">
+    <!-- <div class="aa">
+      <p class="kk">start</p>
+    </div> -->
+    <div class="main">
+        <img src="./istockphoto-1011860180-612x612.jpg " height="680px" width="1500px">
+    </div>
+    <div class="img1">
+    <img src="./bicycle.png" height="200px">
+    </div>
+<div class="img2">
+<img src="./bicycle.png" height="200px">
+</div>
+<div class="img3">
+    <img src="./bicycle.png" height="200px">
+    </div>
+</body>
+</html>
